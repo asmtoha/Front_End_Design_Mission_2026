@@ -6,10 +6,12 @@
   padding: 0;
 }
 
+/* navbar css */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
   height: 72px;
   margin: 0 20px;
   padding: 0 50px;
@@ -19,83 +21,116 @@
 .nav-item {
   display: flex;
   list-style: none;
-  gap: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  gap: 24px;
 }
 
+/* hero section css */
 .hero-section {
   display: flex;
   gap: 50px;
   padding: 50px 100px;
 }
 
-#subtagline {
-  font-size: 10px;
-}
-
 .hero-containers {
   width: 50%;
 }
+
+.hero-title {
+  font-size: 108px;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.hero-description {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #5A5959;
+}
+
+#subtagline {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #5A5959;
+}
+
+.shopsite-img {
+  display: flex;
+  gap: 16px;
+}
+
+.brand-btn-container {
+  display: flex;
+  gap: 10px;
+}
+
 
 .product-img img {
   width: 100%;
   margin-top: 50px;
 }
 
-.hero-containers pre {
-  font-size: clamp(36px, 8vw, 108px);
-  font-weight: 800;
-  line-height: 1;
+/* all buttons css */
+.btn-family {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  padding: 6px 16px 6px 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
-.login-btn {
-  background-color: red;
-  color: white;
+.login-shop-btn {
+  background-color: #D01C28;
+  color: #FFFFFF;
   border: none;
-  font-size: 20px;
-  padding: 5px;
+}
+
+#login-btn {
+  font-size: 16px;
+}
+
+#shop-btn {
+  font-size: 24px;
 }
 
 #category-btn {
+  border: 1px solid #000000;
+  font-size: 24px;
   background-color: white;
   color: gray;
-  font-size: 20px;
-  padding: 5px;
 }
 
-.brand-btn-container {
-  display: flex;
-  gap: 20px;
-}
+
 
 @media (max-width: 768px) {
+  .navbar {
+    font-size: 16px;
+  }
+
   .hero-section {
     flex-direction: column;
   }
 
   .hero-containers {
-    width: inherit;
+    width: 100%;
   }
 
-  .hero-containers h1 {
-    font-size: 48px;
-  }
-}
-
-@media(max-width: 768px) {
-  .navbar {
-    font-size: 16px;
-  }
-
-  .login-btn {
-    font-size: 16px;
-  }
-
-  #category-btn {
-    font-size: 16px;
+  .hero-title {
+    font-size: 10vw;
   }
 
   .nav-item {
     /* display: none; */
     gap: 10px;
   }
+
 }
